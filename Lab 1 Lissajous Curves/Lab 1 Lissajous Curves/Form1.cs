@@ -28,8 +28,8 @@ namespace Lab_1_Lissajous_Curves
 
             for (double t = 0; t < 2 * Math.PI; t += 0.01)
             {
-                X = Math.Cos(XFreq)* t;
-                Y = Math.Cos((YFreq)* t + (Delta * Math.PI / 180));
+                X = Math.Cos(XFreq * t);
+                Y = Math.Cos((YFreq * t) + (Delta * Math.PI / 180));
                 chartLissajous.Series[0].Points.AddXY(X, Y);
             }
         }
